@@ -1,12 +1,9 @@
-<h2>Current Count</h2>
-<%= counter.Counter %>
-<form action="/Count/increase?_method=PUT" method="POST">
-    <input type="hidden" name="Counter" value="<%- counter.Counter-1 %>">
-    <button type="submit">-</button>
-    
-  </form>
-<form action="/Count/increase?_method=PUT" method="POST">
-    <input type="hidden" name="Counter" value="<%- counter.Counter+1 %>">
-    <button type="submit">+</button>
-    
-  </form>
+<div style="text-align: center;">
+  <h2>Current Count</h2>
+  <h1><%= counter.Counter %></h1>
+    <form action="/Count/increase?_method=PUT" method="POST">
+      <input type="hidden" name="Counter" value="<%- counter.Counter+1 %>">
+      <button type="submit" style="width:15%; font-size: 25px;">+</button>
+    </form>
+</div>
+

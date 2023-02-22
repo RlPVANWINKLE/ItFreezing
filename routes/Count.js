@@ -43,16 +43,30 @@ router.get('/', async (req, res) => {
 //   }
 // })
 
-router.get('/:id/edit', async (req, res) => {
-  try {
-    const author = await Author.findById(req.params.id)
-    res.render('authors/edit', { author: author })
-  } catch {
-    res.redirect('/authors')
-  }
+router.get('/reset', async (req, res) => {
+  let count
+  count = await Count.findOne()
+  res.render('reset/reset', {counter:count})
 })
 
 router.put('/increase', async (req, res) => {
+  let count
+  count = await Count.findOne()
+  count.Counter = req.body.Counter
+  await count.save()
+  res.redirect(`/count/`)
+  // } catch {
+  //   if (author == null) {
+  //     res.redirect('/')
+  //   } else {
+  //     res.render('authors/edit', {
+  //       author: author,
+  //       errorMessage: 'Error updating Author'
+  //     })
+  //   }
+  // }
+})
+router.put('/reset', async (req, res) => {
   let count
   count = await Count.findOne()
   count.Counter = req.body.Counter

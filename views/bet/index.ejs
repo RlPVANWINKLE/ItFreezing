@@ -1,5 +1,7 @@
 <h2>Existing bets</h2>
 <% bets.forEach(bet => { %>
+<div style="display: inline-block; margin: 1%; border: 2px solid black; width: 10%; height: 10%; background-color: darkgray;">
   <h2><%= bet.name %></h2>
-  <h4><%= bet.bet %></h4>
+  <h3><%= bet.bet %></h3>
+</div>
 <%}) %>
