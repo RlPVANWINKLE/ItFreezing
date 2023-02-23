@@ -12,9 +12,9 @@ body{
     height: 25%;
     padding: 10px;
     margin-bottom: 1%;
-    background-color: #EEEEEE;
-    border: 1px solid #333333;
-    font: bold 11px Arial;
+    background-color: #fbf9ec;
+    border: 1px solid #2f3944;
+    font: bold 25px Arial;
     text-decoration: none;
     color: #333333;
     border-radius: 2px;
@@ -22,9 +22,8 @@ body{
   }
 
   .Hbutton2:hover{
-    background-color: #333333;
+    background-color: #2f3944;
     color: #EEEEEE;
-    border: 1px solid #EEEEEE;
     text-decoration: underline;
     
   }
@@ -33,17 +32,18 @@ body{
     margin-bottom: 1%;
     padding: 5px 8px;
     background-color: #EEEEEE;
-    border: 1px solid #333333;
+    border: 1px solid #2f3944;
     font: bold 20px Arial;
     text-decoration: none;
-    color: #333333;
+    color: #2f3944;
   }
 
   .label{
     display: inline-block;
-    width: 125px;
+    width: 150px;
     text-align: right;
     font-weight:bolder;
+    font-size: 20px;
   }
   .break5{
     margin-bottom: 5px;
@@ -55,10 +55,11 @@ body{
   .Ebet{
     display: inline-block;
     margin: 1%;
-    border: 2px solid black;
+    border: 2px solid #2f3944;
     width: 15vw;
     height: max-content;
-    background-color: #8bafc7
+    background-color: #79849c;
+    color: #fbf9ec;
   }
 
   .opac{
