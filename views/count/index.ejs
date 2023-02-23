@@ -1,9 +1,11 @@
-<div style="text-align: center;">
-  <h2>Current Count</h2>
-  <h1><%= counter.Counter %></h1>
+<div class="opac">
+  <h2 style="text-align: center;">Current Count</h2>
+  <h1 id="counting"><%= counter.Counter %></h1>
     <form action="/Count/increase?_method=PUT" method="POST">
       <input type="hidden" name="Counter" value="<%- counter.Counter+1 %>">
-      <button type="submit" style="width:15%; font-size: 25px;">+</button>
+      <button type="submit" class="button" style="width:80%; font: 25px;">+</button>
     </form>
 </div>
-
+<div style="position: fixed; margin-left: 0; margin-top: 0; ">
+  <a href="/count/reset" style="color: #1e2139; text-decoration: none;">R</a>
+</div>

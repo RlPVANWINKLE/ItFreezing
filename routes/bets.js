@@ -29,5 +29,25 @@ router.post('/', async (req, res) => {
     res.redirect('bets');
 
 })
+router.get('/reset', async (req, res) => {
+  res.render('reset/betreset')
+})
+
+router.delete('/reset', async (req, res) => {
+  let documents
+  documents = await Bet.deleteMany()
+  res.redirect('/bets')
+  // try {
+  //   author = await Author.findById(req.params.id)
+  //   await author.remove()
+  //   res.redirect('/authors')
+  // } catch {
+  //   if (author == null) {
+  //     res.redirect('/')
+  //   } else {
+  //     res.redirect(`/authors/${author.id}`)
+  //   }
+  // }
+})
 
 module.exports = router

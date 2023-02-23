@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-image: url('../../uploads/aaron-burden-RgTI2KaQ5N4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hbutton2{
+    display: block;
+    margin: auto;
+    width: 33%;
+    height: 25%;
+    padding: 10px;
+    margin-bottom: 1%;
+    background-color: #EEEEEE;
+    border: 1px solid #333333;
+    font: bold 11px Arial;
+    text-decoration: none;
+    color: #333333;
+    border-radius: 2px;
+    
+  }
+
+  .Hbutton2:hover{
+    background-color: #333333;
+    color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    text-decoration: underline;
+    
+  }
+  .button{
+    border-radius: 2px;
+    margin-bottom: 1%;
+    padding: 5px 8px;
+    background-color: #EEEEEE;
+    border: 1px solid #333333;
+    font: bold 20px Arial;
+    text-decoration: none;
+    color: #333333;
+  }
+
+  .label{
+    display: inline-block;
+    width: 125px;
+    text-align: right;
+    font-weight:bolder;
+  }
+  .break5{
+    margin-bottom: 5px;
+  }
+  .center{
+    text-align: center;
+  }
+
+  .Ebet{
+    display: inline-block;
+    margin: 1%;
+    border: 2px solid black;
+    width: 15vw;
+    height: max-content;
+    background-color: #8bafc7
+  }
+
+  .opac{
+    background-color: #fbf9ec;
+    opacity: 1;
+    width: max-content;
+    margin: auto;
+    padding: 1%;
+    border-radius: 5%;
+  }

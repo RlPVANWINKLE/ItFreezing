@@ -1,7 +1,13 @@
-<h2>Existing bets</h2>
+
+<div style="text-align: center;">
+  <h2 class="opac" style="margin: auto;">Existing Bets</h2>
 <% bets.forEach(bet => { %>
-<div style="display: inline-block; margin: 1%; border: 2px solid black; width: 10%; height: 10%; background-color: darkgray;">
-  <h2><%= bet.name %></h2>
-  <h3><%= bet.bet %></h3>
+<div class="Ebet">
+  <h1><%= bet.name %></h1>
+  <h2 id="color"><%= bet.bet %></h2>
 </div>
 <%}) %>
+</div>
+<div style="position: fixed; margin-left: 0; margin-top: 0; ">
+  <a href="/bets/reset" style="color: #1e2139; text-decoration: none;">R</a>
+</div>
