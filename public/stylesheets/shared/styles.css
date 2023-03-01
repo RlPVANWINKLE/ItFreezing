@@ -1,72 +1,85 @@
 body{
     margin: 0;
-    background-image: url('../../uploads/aaron-burden-RgTI2KaQ5N4-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.Hbutton2{
-    display: block;
+.applications{
+    /* display: flex; */
+    float: left;
+    padding: 2%;
+    border-right: 1px solid black;
+    height: 70vh;
+}
+
+.button {
     margin: auto;
-    width: 33%;
-    height: 25%;
+    display: block;
+    width:max-content;
+    height: 25px;
+    background: #696969;
     padding: 10px;
-    margin-bottom: 1%;
-    background-color: #fbf9ec;
-    border: 1px solid #2f3944;
-    font: bold 25px Arial;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
     text-decoration: none;
-    color: #333333;
-    border-radius: 2px;
-    
-  }
-
-  .Hbutton2:hover{
-    background-color: #2f3944;
-    color: #EEEEEE;
-    text-decoration: underline;
-    
-  }
-  .button{
-    border-radius: 2px;
-    margin-bottom: 1%;
-    padding: 5px 8px;
-    background-color: #EEEEEE;
-    border: 1px solid #2f3944;
-    font: bold 20px Arial;
+}
+.button2 {
+    width:max-content;
+    height:max-content;
+    background: #696969;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
     text-decoration: none;
-    color: #2f3944;
-  }
-
-  .label{
+}
+.Hbutton2 {
+    width:max-content;
+    height:max-content;
+    background: #696969;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
+    text-decoration: none;
+}
+.buttonA {
+    height:max-content;
+    background: #696969;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
+    text-decoration: none;
+}
+.task:hover{
+    cursor:pointer;
+    
+}
+.form{
+    margin: auto;
+    margin-top: 2%;
+    width: max-content;
+    display: block;
+    background-color: rgb(255, 225, 128);
+    padding: 2%;
+    border: 2PX SOLID BLACK;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+.align{
     display: inline-block;
     width: 150px;
-    text-align: right;
-    font-weight:bolder;
-    font-size: 20px;
-  }
-  .break5{
-    margin-bottom: 5px;
-  }
-  .center{
-    text-align: center;
-  }
-
-  .Ebet{
-    display: inline-block;
-    margin: 1%;
-    border: 2px solid #2f3944;
-    width: 15vw;
-    height: max-content;
-    background-color: #79849c;
-    color: #fbf9ec;
-  }
-
-  .opac{
-    background-color: #fbf9ec;
-    opacity: 1;
-    width: max-content;
-    margin: auto;
-    padding: 1%;
-    border-radius: 5%;
-  }
+    text-align: left;
+}

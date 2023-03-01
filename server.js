@@ -5,8 +5,9 @@ const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 
 const indexRouter = require('./routes/index')
-const countRouter = require('./routes/Count')
-const betRouter = require('./routes/bets')
+const AccountRouter = require('./routes/Accounts')
+const ApplicationRouter = require('./routes/Applications')
+const TaskRouter = require('./routes/Tasks')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -22,7 +23,8 @@ mongoose.connect('mongodb+srv://RIPVANWINKLE:plop@cluster0.rvosq.mongodb.net/?re
 
 
 app.use('/', indexRouter)
-app.use('/count', countRouter)
-app.use('/bets', betRouter)
+app.use('/account', AccountRouter)
+app.use('/application', ApplicationRouter)
+app.use('/task', TaskRouter)
 
 app.listen(process.env.PORT || 3000)

@@ -1,15 +1,16 @@
 const express = require('express')
 const router = express.Router()
-const Bet = require('../models/bet')
+const Account = require('../models/Accounts')
 
 router.get('/', async (req, res) => {
-  let bet
+  let accounts
   try {
-    bet = await bet.find()
+    accounts = await Account.find().limit(10).exec()
   } catch {
-    books = []
+    accounts = []
   }
-  res.render('index', { bet: bet })
+  // res.render('index', { bet: bet })
+  res.send('');
 })
 
 module.exports = router
