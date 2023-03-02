@@ -46,7 +46,8 @@ router.get('/:id/details', async (req, res) => {
   res.render('Accounts/details', {
     Apps:Apps,
     acc:ID,
-    tasks:tasks
+    tasks:tasks,
+    Account:Account
   });
   console.log(tasks)
 })

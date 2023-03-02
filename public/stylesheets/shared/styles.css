@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #aaaaaa;
 }
 
 .applications{
@@ -15,11 +16,11 @@ body{
     display: block;
     width:max-content;
     height: 25px;
-    background: #696969;
+    background: white;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: #2c2c2c;
     font-weight: bold;
     font-size: large;
     border: 2px solid black;
@@ -28,11 +29,11 @@ body{
 .button2 {
     width:max-content;
     height:max-content;
-    background: #696969;
+    background: white;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: #2c2c2c;
     font-weight: bold;
     font-size: large;
     border: 2px solid black;
@@ -41,23 +42,26 @@ body{
 .Hbutton2 {
     width:max-content;
     height:max-content;
-    background: #696969;
+    background: white;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: #2c2c2c;
     font-weight: bold;
     font-size: large;
     border: 2px solid black;
     text-decoration: none;
 }
 .buttonA {
+    margin: auto;
+    margin-bottom: 1%;
+    width: 250px;
     height:max-content;
     background: #696969;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: #2c2c2c;
     font-weight: bold;
     font-size: large;
     border: 2px solid black;
@@ -72,7 +76,7 @@ body{
     margin-top: 2%;
     width: max-content;
     display: block;
-    background-color: rgb(255, 225, 128);
+    background-color: #525252;
     padding: 2%;
     border: 2PX SOLID BLACK;
     border-radius: 25px;
@@ -82,4 +86,7 @@ body{
     display: inline-block;
     width: 150px;
     text-align: left;
+}
+.textW{
+    color: white;
 }

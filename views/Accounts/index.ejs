@@ -1,9 +1,9 @@
 <div class="form" style="width:25%">
   <div style="text-align: center;">
-    <h1 class=""><u>Accounts</u></h1>
+    <h1 class="textW"><u>Accounts</u></h1>
   <% accounts.forEach(account => { %>
   <div class="">
-    <h2><a href="/account/<%= account.id %>/details" class="buttonA"><%= account.DSN %></a></h2>
+    <h2 class="buttonA" style="background-color: white;" ><a href="/account/<%= account.id %>/details" style="color:#000000; text-decoration: none;"><%= account.DSN %> - (<%= account.Tasks.length %>)</a></h2>
   </div>
   <%}) %>
   </div>
