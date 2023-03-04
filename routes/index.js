@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     accounts = []
   }
   // res.render('index', { bet: bet })
-  res.send('');
+  res.send('hello');
 })
 
 module.exports = router

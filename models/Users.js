@@ -5,8 +5,12 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  Password:{
-    type: string,
+  Password: {
+    type: String,
+    required: true
+  },
+  Name:{
+    type: String,
     required: true
   },
   Accounts: [{type:mongoose.Schema.Types.ObjectId, ref: 'Accounts', default:''}],
