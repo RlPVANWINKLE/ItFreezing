@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-color: #aaaaaa;
+    background-color: #00425A;
+
 }
 
 .applications{
@@ -16,7 +17,7 @@ body{
     display: block;
     width:max-content;
     height: 25px;
-    background: white;
+    background-color: #BFDB38;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
@@ -29,7 +30,7 @@ body{
 .button2 {
     width:max-content;
     height:max-content;
-    background: white;
+    background-color: #BFDB38;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
@@ -42,7 +43,7 @@ body{
 .Hbutton2 {
     width:max-content;
     height:max-content;
-    background: white;
+    background-color: #BFDB38;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
@@ -51,13 +52,14 @@ body{
     font-size: large;
     border: 2px solid black;
     text-decoration: none;
+    margin-right: 2%;
 }
 .buttonA {
     margin: auto;
     margin-bottom: 1%;
     width: 250px;
     height:max-content;
-    background: #696969;
+    background-color: #BFDB38;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
@@ -76,7 +78,7 @@ body{
     margin-top: 2%;
     width: max-content;
     display: block;
-    background-color: #525252;
+    background-color: #1F8A70;
     padding: 2%;
     border: 2PX SOLID BLACK;
     border-radius: 25px;
@@ -88,5 +90,11 @@ body{
     text-align: left;
 }
 .textW{
-    color: white;
+    color: #000000;
+}
+.title{
+    font-size: 45px;
+}
+.tasktitle{
+    color: #FC7300;
 }

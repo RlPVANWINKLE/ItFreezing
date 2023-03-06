@@ -1,16 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const Account = require('../models/Accounts')
+const account = require('../models/Accounts')
 
 router.get('/', async (req, res) => {
-  let accounts
-  try {
-    accounts = await Account.find().limit(10).exec()
-  } catch {
-    accounts = []
-  }
-  // res.render('index', { bet: bet })
-  res.send('hello');
+  let query = account.find()
+  const accounts = await query.exec()
+  res.render('Accounts/index', {
+    accounts:accounts
+  });
 })
 
 module.exports = router
