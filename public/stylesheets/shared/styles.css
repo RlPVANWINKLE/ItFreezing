@@ -8,7 +8,7 @@ body{
     /* display: flex; */
     float: left;
     padding: 2%;
-    border-right: 1px solid black;
+    border: 1px solid black;
     height: 70vh;
 }
 
@@ -50,7 +50,7 @@ body{
     color: #2c2c2c;
     font-weight: bold;
     font-size: large;
-    border: 2px solid black;
+    border: 3px solid black;
     text-decoration: none;
     margin-right: 2%;
 }
@@ -80,7 +80,7 @@ body{
     display: block;
     background-color: #1F8A70;
     padding: 2%;
-    border: 2PX SOLID BLACK;
+    border: 2PX SOLID white;
     border-radius: 25px;
     font-weight: bolder;
 }
