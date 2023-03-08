@@ -5,6 +5,10 @@
       <input type="hidden" name="Counter" value="<%- counter.Counter+1 %>">
       <button type="submit" class="button" style="width:80%; font: 25px;">+</button>
     </form>
+    <form action="/Count/increase?_method=PUT" method="POST">
+      <input type="hidden" name="Counter" value="<%- counter.Counter-1 %>">
+      <button type="submit" class="button" style="width:80%; font: 25px;">-</button>
+    </form>
 </div>
 <div style="margin-top: 5%; ">
   <a href="/count/reset" class="button">RESET</a>
