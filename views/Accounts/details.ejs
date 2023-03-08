@@ -13,11 +13,11 @@
       <% if(tasks[i].Status == "Active"){%>
         <span onclick="window.location='/account/<%= acc %>/<%= tasks[i].id %>'" class="task textW" title="CLICK TO COMPLETE" ><h2 style="max-width: 75%; margin: auto;" class=""><%= tasks[i].Title %>:</h2><h3 style="border-bottom: 3px solid black; padding-bottom: 5%;"><%= tasks[i].Description %></h3></span><br><br>
       <%} else{%>
-        <span style="text-decoration: line-through; text-decoration-color:#FC7300;" ondblclick="window.location='/account/<%= acc %>/<%= tasks[i].id %>/delete'" class="textW"><h2  title=" DBL CLICK TO DELETE" class="task textW" style="max-width: 75%; margin: auto;"><%= tasks[i].Title %>:</h2><h3 style="border-bottom: 3px solid black; padding-bottom: 5%;"><%= tasks[i].Description %></h3></span><br><br>
+        <span style="text-decoration: line-through; text-decoration-color:#12232E;" ondblclick="window.location='/account/<%= acc %>/<%= tasks[i].id %>/delete'" class="textW"><h2  title=" DBL CLICK TO DELETE" class="task textW" style="max-width: 75%; margin: auto;"><%= tasks[i].Title %>:</h2><h3 style="border-bottom: 3px solid black; padding-bottom: 5%;"><%= tasks[i].Description %></h3></span><br><br>
       <%}%>
       
     <%} %>
-    <div style="position: sticky; bottom: -10px; background-color: #1F8A70;">
+    <div style="position: sticky; bottom: -10px; background-color: #007cc7;">
       <a href="/account/<%= acc %>/tasks" class="button2">ADD TASKS</a>
     </div>
 
