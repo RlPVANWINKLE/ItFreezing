@@ -3,11 +3,12 @@
   <h2 class="opac" style="margin: auto;">Existing Bets</h2>
 <% bets.forEach(bet => { %>
 <div class="Ebet">
-  <h1><%= bet.name %></h1>
-  <h2 id="color"><%= bet.bet %></h2>
+  <h4 style="position: absolute; margin-top: 1%; margin-left: 1%;"><u><%=DOTW[bet.date]%></u></h4>
+  <h1 style=" margin-top: 20%;"><%= bet.name %></h1>
+  <h2 id="color" style=""><%= bet.bet %></h2>
 </div>
 <%}) %>
 </div>
-<div style="position: fixed; margin-left: 0; margin-top: 0; ">
-  <a href="/bets/reset" style="color: #1e2139; text-decoration: none;">R</a>
+<div style="margin-top: 5%;">
+  <a href="/bets/reset" class="button">RESET</a>
 </div>

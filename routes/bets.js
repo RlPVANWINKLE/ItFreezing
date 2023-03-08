@@ -6,10 +6,12 @@ const imageMimeTypes = ['image/jpeg', 'image/png', 'images/gif']
 
 // All Books Route
 router.get('/', async (req, res) => {
+  const DOTW = ['','Mon','Tues','Wed','Thurs','Fri']
   let query = Bet.find()
   const bets = await query.exec()
   res.render('bet/index', {
-    bets:bets
+    bets:bets,
+    DOTW:DOTW
   })
 })
 
@@ -20,11 +22,14 @@ router.get('/new', async (req, res) => {
 
 // Create Book Route
 router.post('/', async (req, res) => {
+  let Dates = new Date()
   const bet = new Bet({
     name: req.body.name,
-    bet: req.body.bet
+    bet: req.body.bet,
+    date: Dates.getDay()
   })
     const newBet = await bet.save()
+    console.log(Dates.getDay());
     // res.redirect(`books/${newBook.id}`)
     res.redirect('bets');
 

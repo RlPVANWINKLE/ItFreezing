@@ -5,9 +5,9 @@ const Bet = require('../models/bet')
 router.get('/', async (req, res) => {
   let bet
   try {
-    bet = await bet.find()
+    bet = await Bet.find()
   } catch {
-    books = []
+    bet = []
   }
   res.render('index', { bet: bet })
 })

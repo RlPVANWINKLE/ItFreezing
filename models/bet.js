@@ -7,6 +7,9 @@ const betSchema = new mongoose.Schema({
   },
   bet: {
     type: Number
+  },
+  date:{
+    type: Number
   }
 })
 
