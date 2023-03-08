@@ -41,7 +41,9 @@ body{
     text-decoration: none;
 }
 .Hbutton2 {
-    width:max-content;
+    display:inline-block;
+    margin: auto;
+    width: 250px;
     height:max-content;
     background-color: #203647;
     padding: 10px;
@@ -54,10 +56,22 @@ body{
     text-decoration: none;
     margin-right: 2%;
 }
+.Hbutton3 {
+    height:max-content;
+    background-color: #203647;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #EEFBFB;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    margin-right: 2%;
+}
 .buttonA {
     margin: auto;
     margin-bottom: 1%;
-    width: 250px;
+    width: 90%;
     height:max-content;
     background-color: #203647;
     padding: 10px;
